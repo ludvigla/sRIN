@@ -67,9 +67,9 @@ sRIN <- overlay(brick(stack(normalized_probes)), fun = function(a, b, c, d) (a +
 bb <- c(0, 0, 2.5, 5, 7.5, 10)
 par(mar = c(0, 0, 0, 0))
 image(sRIN, col = colours, breaks = bb, main = "Title", xaxt = "n", yaxt = "n", xlab = "", ylab = "")
-lg_width <- round(probes[["P0"]]@ncols/10); lg_height <- round(lg_width*1.5)
-legend(x = c(0, lg_width/probes[["P0"]]@ncols), 
-       y = c(probes[["P0"]]@nrows - lg_height, probes[["P0"]]@nrows)/probes[["P0"]]@nrows, 
+#lg_width <- round(probes[["P0"]]@ncols/10); lg_height <- round(lg_width*1.5)
+legend(x = 0, #x = c(0, lg_width/probes[["P0"]]@ncols), 
+       y = 1, #y = c(probes[["P0"]]@nrows - lg_height, probes[["P0"]]@nrows)/probes[["P0"]]@nrows, 
        legend = c("10","7.5","5","2.5","0"), 
        fill = rev(colours), 
        title = "sRIN", cex = 2)
@@ -84,9 +84,9 @@ if (args$plot_error) {
   brks <- c(0, 11)
   par(mar = c(0, 0, 0, 0))
   image(sRIN, col = col2, breaks = brks)
-  lg_width <- round(probes[["P0"]]@ncols/5); lg_height <- round(lg_width/4)
-  legend(x = c(0, lg_width/probes[["P0"]]@ncols), 
-         y = c(probes[["P0"]]@nrows - lg_height, probes[["P0"]]@nrows)/probes[["P0"]]@nrows, 
+  #lg_width <- round(probes[["P0"]]@ncols/5); lg_height <- round(lg_width/4)
+  legend(x = 0, #x = c(0, lg_width/probes[["P0"]]@ncols), 
+         y = 1, #y = c(probes[["P0"]]@nrows - lg_height, probes[["P0"]]@nrows)/probes[["P0"]]@nrows, 
          legend = paste("Error rate: ", round(sum(values(sRIN > 10))/ncell(sRIN)*100, digits = 2), "%", sep = ""), 
          cex = 2)
   dev.off()
