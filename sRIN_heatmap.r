@@ -4,8 +4,8 @@ suppressPackageStartupMessages({
   library(raster)
   if (!require("rgdal")) install.packages("rgdal")
   library(rgdal)
-  if (!require("argparse")) install.packages("rgdal")
-  library(rgdal)
+  if (!require("argparse")) install.packages("argparse")
+  library(argparse)
 })
 
 # Create parser object
