@@ -27,5 +27,12 @@ If you use this script in your research pelase consider citing [REF]
 
 ```
 
+### sRIN heat map of MOB tissue
+
 ![](data/sRIN_heatmap.png?raw=True "sRIN heatmap")
+
+### Error distribution
+
+Missaligned pixels are colored in white and makes up a total of 0.51% of the image.
+
 ![](data/sRIN_error.png?raw=True "sRIN heatmap")
