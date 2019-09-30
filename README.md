@@ -16,10 +16,10 @@ If you use this script in your research pelase consider citing [REF]
 
 ```
 # Only plot sRIN heatmap
-./sRIN_heatmap.R D1_P0.tif D1_P1.tif D1_P2.tif D1_P3.tif D1_P4.tif
+./sRIN_heatmap.R MOB_P0.tif MOB_P1.tif MOB_P2.tif MOB_P3.tif MOB_P4.tif
 
 # Include error plot
-./sRIN_heatmap.R D1_P0.tif D1_P1.tif D1_P2.tif D1_P3.tif D1_P4.tif --plot-error
+./sRIN_heatmap.R MOB_P0.tif MOB_P1.tif MOB_P2.tif MOB_P3.tif MOB_P4.tif --plot-error
 
 ```
 
