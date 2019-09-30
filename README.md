@@ -8,6 +8,7 @@ and their fluorescence signal can be used as a proxy for the total length of the
 To run the script you need to have R installed pon your computer. You will also need to install the following R packages:
 
 ````
+# Run in an R session
 install.packages(c("raster", "rgdal", "argparse")
 ````
 
