@@ -24,4 +24,4 @@ If you use this script in your research pelase consider citing [REF]
 ```
 
 ![](data/sRIN_heatmap.png?raw=True "sRIN heatmap")
-![](data/sRIN_error_heatmap.png?raw=True "sRIN heatmap")
+![](data/sRIN_error.png?raw=True "sRIN heatmap")
